@@ -2,7 +2,14 @@ package com.github.vendigo.acebar
 
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.GL20
+import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer
+
+fun SpriteBatch.draw(block: SpriteBatch.() -> Unit) {
+    begin()
+    block()
+    end()
+}
 
 fun ShapeRenderer.draw(shapeType: ShapeRenderer.ShapeType, block: ShapeRenderer.() -> Unit) {
     begin(shapeType)
