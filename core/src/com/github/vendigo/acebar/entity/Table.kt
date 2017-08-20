@@ -1,6 +1,6 @@
-package com.github.vendigo.acebar.table
+package com.github.vendigo.acebar.entity
 
-import com.github.vendigo.acebar.glass.Glass
+import com.github.vendigo.acebar.entity.Glass
 
 class Table(val glasses: List<Glass>) {
     private val startX = 20f
